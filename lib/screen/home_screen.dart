@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_route/route/route_name.dart';
-import 'package:go_router/go_router.dart';
+
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -15,13 +14,7 @@ class HomeScreen extends StatelessWidget {
            children: [
              const Text("Go Route"),
                ElevatedButton(onPressed: (){
-                // GoRouter.of(context).go("/profile");
-                
-                //  String data = "Riyad";
-                      
-                // context.go("/profile$data");
-                // context.goNamed(RouteName.profilepage, pathParameters: {"data":"riyad"});
-                context.goNamed(RouteName.profilepage, queryParameters: {"data":"riyad"});
+           
                 
                 }, child: const Text("Go to"))
            ],

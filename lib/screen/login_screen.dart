@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
+
 
 import '../route/route_name.dart';
 
@@ -19,11 +19,7 @@ class LoginScreen extends StatelessWidget {
           children: [
              const Text("This is long in Page"),
                 ElevatedButton(onPressed: (){
-                  // types of route
-                     
-                      // context.go("/chat");
-                  // GoRouter.of(context).go("/chat");
-                context.goNamed(RouteName.homepage); 
+           
               
                   },
                   
