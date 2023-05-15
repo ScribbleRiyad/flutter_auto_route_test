@@ -1,7 +1,8 @@
 import 'dart:async';
+import 'package:auto_route_test/screen/home_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:go_route/screen/home_screen.dart';
+
 
 
 class SplashScreen extends StatefulWidget {
