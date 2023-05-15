@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 
-import 'screen/splash_screen.dart';
+
 
 
 void main() async {
