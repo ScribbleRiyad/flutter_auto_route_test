@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 
-import '../route/route_name.dart';
+
+
 
 
 // ignore: must_be_immutable
@@ -19,11 +19,7 @@ class ProfieScreen extends StatelessWidget {
           children: [
              Text("Hello $data"),
                 ElevatedButton(onPressed: (){
-                  // types of route
-                     
-                      // context.go("/chat");
-                  // GoRouter.of(context).go("/chat");
-                context.goNamed(RouteName.chatpage); 
+               
               
                   },
                   
