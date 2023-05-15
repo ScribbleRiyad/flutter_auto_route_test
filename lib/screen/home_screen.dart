@@ -8,6 +8,9 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: const Center(child: Text("Home Screen")),
+        ),
        body: Center(
          child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

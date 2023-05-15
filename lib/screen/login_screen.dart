@@ -12,6 +12,9 @@ class LoginScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
+         appBar: AppBar(
+          title: const Center(child: Text(" Login Screen")),
+        ),
       body: Center(
         child: Column(
            mainAxisAlignment: MainAxisAlignment.center,

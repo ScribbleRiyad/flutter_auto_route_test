@@ -13,6 +13,9 @@ class ProfieScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return  SafeArea(
       child: Scaffold(
+           appBar: AppBar(
+          title: const Center(child: Text(" Profile Screen")),
+        ),
       body: Center(
         child: Column(
            mainAxisAlignment: MainAxisAlignment.center,
