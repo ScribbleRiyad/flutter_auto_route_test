@@ -14,12 +14,12 @@ class HomeScreen extends StatelessWidget {
        body: Center(
          child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-           children: [
-             const Text("Go Route"),
-               ElevatedButton(onPressed: (){
+           children: const [
+             Text("This is the home screen"),
+              //  ElevatedButton(onPressed: (){
            
                 
-                }, child: const Text("Go to"))
+              //   }, child: const Text("Go to"))
            ],
          ),
        ),

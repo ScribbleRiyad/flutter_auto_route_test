@@ -1,4 +1,5 @@
 
+import 'package:auto_route_test/screen/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 
@@ -29,6 +30,7 @@ class AutoRouteTest extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.deepOrange,
         ),
+        home: const SplashScreen(),
         );
   }
 
