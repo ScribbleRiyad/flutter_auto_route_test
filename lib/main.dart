@@ -19,7 +19,7 @@ class AutoRouteTest extends StatelessWidget {
    const AutoRouteTest({Key? key}) : super(key: key);
 
 
- final isboggedIn = true;
+ 
  
   @override
   Widget build(BuildContext context) {
