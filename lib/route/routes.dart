@@ -4,9 +4,11 @@ part of 'route_import.dart';
   replaceInRouteName: "router"
 )      
 class AppRouter extends $AppRouter {      
-    RouteType get defaultRouteType => const RouteType.adaptive(); 
+    @override
+      RouteType get defaultRouteType => const RouteType.adaptive(); 
 
 
+  @override
   List<AutoRoute> get routes => [      
    /// routes go here     
    ];    
