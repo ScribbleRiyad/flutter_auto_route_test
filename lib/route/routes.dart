@@ -39,8 +39,26 @@ class AppRouter extends $AppRouter {
         CustomRoute(page: LoginScreenRoute.page ,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
         CustomRoute(page: ErrorScreenRoute.page,transitionsBuilder: TransitionsBuilders.slideBottom),
 
+// child or sub class auto route 
+  //  AutoRoute(                    
+  //     path: '/',                    
+  //     page: SplashScreenRoute.page,                    
+  //     children: [                    
+  //       AutoRoute(path: '', page: HomeScreenRoute.page),                             
+  //       AutoRoute(path: 'posts', page: ProfieScreenRoute.page),                    
+  //     ],                    
+  //   ), 
 
-
+  // redirect to the auto route
+    //  AutoRoute(                    
+//     path: '/',                    
+  //     page: SplashScreenRoute.page,                   
+    //   children: [                    
+    //     RedirectRoute(path: '/', redirectTo: 'profile'),                    
+    //    AutoRoute(path: '', page: HomeScreenRoute.page),                             
+  //       AutoRoute(path: 'posts', page: ProfieScreenRoute.page),                      
+    //   ],                    
+    // ),
         //Navigating Between Screens
 
         // get the scoped router by calling                    
@@ -117,6 +135,35 @@ class AppRouter extends $AppRouter {
 // context.navigateNamedTo('/books');                
 // context.back();               
 // context.popRoute();
+
+
+
+// page view
+// AutoTabsRouter.pageView(            
+//      routes: [            
+//         BooksTab(),            
+//         ProfileTab(),            
+//         SettingsTab(),            
+//         ],           
+//      builder: (context, child, _) {            
+//         final tabsRouter = AutoTabsRouter.of(context);      
+//         return Scaffold(            
+//               appBar: AppBar(            
+//               title: Text(context.topRoute.name),            
+//               leading: AutoLeadingButton()),            
+//               body: child,            
+//               bottomNavigationBar: BottomNavigationBar(                
+//                     currentIndex: tabsRouter.activeIndex,                
+//                     onTap: tabsRouter.setActiveIndex                
+//                     items: [                
+//                       BottomNavigationBarItem(label: 'Books',...),                
+//                       BottomNavigationBarItem(label: 'Profile',...),                
+//                       BottomNavigationBarItem(label: 'Settings',...),                
+//                     ],                
+//                   ),          
+//             ),            
+//       ); },          
+//   );
   
    ];    
  }
