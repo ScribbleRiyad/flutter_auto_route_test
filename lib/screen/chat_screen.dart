@@ -1,5 +1,6 @@
 import 'package:auto_route/auto_route.dart';
 import 'package:auto_route_test/route/route_import.gr.dart';
+import 'package:auto_route_test/screen/error_handle.dart';
 import 'package:flutter/material.dart';
 
 @RoutePage()
@@ -19,7 +20,7 @@ class ChatScreen extends StatelessWidget {
         
                ElevatedButton(onPressed: (){
                 
-                 AutoRouter.of(context).push(const LoginScreenRoute());
+                 AutoRouter.of(context).push(const ErrorScreenRoute());
                 }, child: const Text("Go to"))
             ],
           ),

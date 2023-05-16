@@ -35,9 +35,9 @@ class AppRouter extends $AppRouter {
         CustomRoute(page: SplashScreenRoute.page, path: "/", transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
         CustomRoute(page: HomeScreenRoute.page,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
         CustomRoute(page: ProfieScreenRoute.page,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
-        CustomRoute(page: ChatScreenRoute.page,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
+        CustomRoute(page: ChatScreenRoute.page,transitionsBuilder: TransitionsBuilders.zoomIn),
         CustomRoute(page: LoginScreenRoute.page ,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
-        CustomRoute(page: ErrorScreenRoute.page,transitionsBuilder: (context, animation, secondaryAnimation, child) => FadeTransition(opacity: animation, child: child,),),
+        CustomRoute(page: ErrorScreenRoute.page,transitionsBuilder: TransitionsBuilders.slideBottom),
   
    ];    
  }
