@@ -21,7 +21,8 @@ class HomeScreen extends StatelessWidget {
            children: [
              const Text("This is the home screen"),
                ElevatedButton(onPressed: (){
-                AutoRouter.of(context).push( ProfieScreenRoute(data: "riyad"));
+                // AutoRouter.of(context).push( ProfieScreenRoute(data: "riyad"));
+                 context.router.push( ProfieScreenRoute(data: "riyad"));
                  
                 
                 }, child: const Text("Go to"))
