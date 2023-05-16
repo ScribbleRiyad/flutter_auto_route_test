@@ -164,6 +164,45 @@ class AppRouter extends $AppRouter {
 //             ),            
 //       ); },          
 //   );
+
+
+
+
+
+// Tab Bar View
+// AutoTabsRouter.tabBar(            
+//      routes: [            
+//         BooksTab(),            
+//         ProfileTab(),            
+//         SettingsTab(),            
+//         ],           
+//      builder: (context, child, controller) {          
+//         final tabsRouter = AutoTabsRouter.of(context);      
+//         return Scaffold(            
+//               appBar: AppBar(            
+//                  title: Text(context.topRoute.name),            
+//                  leading: AutoLeadingButton(),          
+//                  bottom: TabBar(            
+//                     controller: controller,            
+//                     tabs: const [            
+//                     Tab(text: '1', icon: Icon(Icons.abc)),            
+//                     Tab(text: '2', icon: Icon(Icons.abc)),            
+//                     Tab(text: '3', icon: Icon(Icons.abc)),            
+//                    ],),          
+//                ),            
+//               body: child,            
+//               bottomNavigationBar: BottomNavigationBar(                
+//                     currentIndex: tabsRouter.activeIndex,                
+//                     onTap: tabsRouter.setActiveIndex                
+//                     items: [                
+//                       BottomNavigationBarItem(label: 'Books',...),                
+//                       BottomNavigationBarItem(label: 'Profile',...),                
+//                       BottomNavigationBarItem(label: 'Settings',...),                
+//                     ],                
+//                   ),          
+//             ),            
+//       ); },          
+//   );
   
    ];    
  }
