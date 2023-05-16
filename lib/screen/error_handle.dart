@@ -1,8 +1,8 @@
+import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 
 
-
-// ignore: must_be_immutable
+@RoutePage()
 class ErrorScreen extends StatelessWidget {
  
    const ErrorScreen({super.key});

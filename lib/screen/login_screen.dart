@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-
+import 'package:auto_route/auto_route.dart';
 
 
 
 // ignore: must_be_immutable
+
+@RoutePage()
 class LoginScreen extends StatelessWidget {
   
    const LoginScreen({super.key,});
