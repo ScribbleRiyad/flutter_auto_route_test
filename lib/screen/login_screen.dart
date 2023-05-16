@@ -1,3 +1,4 @@
+import 'package:auto_route_test/route/route_import.gr.dart';
 import 'package:flutter/material.dart';
 import 'package:auto_route/auto_route.dart';
 
@@ -24,7 +25,7 @@ class LoginScreen extends StatelessWidget {
              const Text("This is long in Page"),
                 ElevatedButton(onPressed: (){
            
-              
+               AutoRouter.of(context).push(const ChatScreenRoute());
                   },
                   
                    child: const Text("Go to"))
